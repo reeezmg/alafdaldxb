@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary: #f97316;
+  --gray: #6b7280;
+  --white: #ffffff;
+}
+
+/* Smooth scrolling for anchor links */
+html { scroll-behavior: smooth; }
+
+/* global font */
+html, body {
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* prevent images from causing layout shift */
+img { display: block; max-width: 100%; height: auto; }
+
+/* accessible focus styling (use focus-visible to avoid focus ring noise for mouse users) */
+:focus { outline: none; }
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(249,115,22,0.16);
+  border-radius: 6px;
+}
+
+/* ensure decorative elements don't capture pointer events */
+.pointer-events-none { pointer-events: none; }
+
+/* helper for image containers used in hero/about */
+.media-fit {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* keep long text readable on very wide screens */
+.prose-max {
+  max-width: 70ch;
+}
+
