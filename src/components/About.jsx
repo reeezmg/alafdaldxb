@@ -3,11 +3,11 @@ import React from "react";
 export default function About() {
   return (
     <section id="about" className="bg-white py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 text-center">
+      <div className=" px-4 sm:px-6 lg:px-8 space-y-16 text-center">
         {/* ABOUT US */}
-        <div className="space-y-4 bg-[var(--primary)] text-white py-10 px-6 rounded-lg max-w-4xl mx-auto">
+      <div className="space-y-4 bg-[var(--primary)] text-white py-10 px-6 rounded-lg ">
           <h2 className="text-3xl font-bold">About Us</h2>
-          <p className="leading-relaxed max-w-3xl mx-auto">
+          <p className="leading-relaxed ">
             With over a decade of excellence, AL AFDAL delivers high-quality
             prefab and portable sanitation solutions across the UAE, KSA, and
             India. We combine durable materials, fast delivery, and professional
@@ -26,7 +26,7 @@ export default function About() {
         </div>
 
         {/* VISION & MISSION – subtle orange style */}
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-10 md:grid-cols-2 max-w-7xl mx-auto">
           {/* Vision */}
           <div className="p-8 rounded-lg text-center border border-orange-100 bg-orange-50/30 shadow-sm">
             <h3 className="text-2xl font-bold mb-3 relative inline-block">
@@ -55,7 +55,7 @@ export default function About() {
         </div>
 
         {/* EXPERTISE */}
-        <div className="space-y-4 bg-[var(--primary)] text-white py-10 px-6 rounded-lg max-w-4xl mx-auto">
+        <div className="space-y-4 bg-[var(--primary)] text-white py-10 px-6 rounded-lg ">
           <h3 className="text-2xl font-bold text-center">Our Expertise</h3>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-3xl mx-auto text-left">
@@ -69,7 +69,7 @@ export default function About() {
         </div>
 
         {/* MILESTONES & PROMISE – same orange style as Vision & Mission */}
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-10 md:grid-cols-2  max-w-7xl mx-auto">
           {/* Milestones */}
           <div className="p-8 rounded-lg border border-orange-100 bg-orange-50/30 shadow-sm">
             <h3 className="text-2xl font-bold mb-3 relative inline-block">

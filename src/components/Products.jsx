@@ -42,16 +42,16 @@ const PRODUCT_DATA = [
 export default function Products() {
   return (
     <section id="products" className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="px-6">
 
         {/* Orange header */}
-        <div className="text-center mb-8 bg-[var(--primary)] text-white py-8 px-6 rounded-lg max-w-3xl mx-auto">
+        <div className="text-center mb-8 bg-[var(--primary)] text-white py-8 px-6 rounded-lg ">
           <h2 className="text-2xl font-bold">Our Products</h2>
           <p className="mt-2">High-quality, durable & easy to maintain units.</p>
         </div>
 
         {/* Product Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {PRODUCT_DATA.map((p) => (
             <article
               key={p.key}
