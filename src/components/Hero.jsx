@@ -72,7 +72,7 @@ export default function Hero() {
           <div>
             <div className="w-full aspect-[16/10] rounded-lg overflow-hidden">
               <img
-                src="/src/assets/Cabin1.png"
+                src="/assets/Cabin1.png"
                 alt="Hero"
                 className="w-full h-full object-contain"
               />

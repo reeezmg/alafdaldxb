@@ -5,37 +5,37 @@ const PRODUCT_DATA = [
     key: "portable-toilets",
     title: "Portable Toilets",
     desc: "Durable, hygienic and easy-to-service portable toilet units for events and sites.",
-    imageUrl: "/src/assets/Product1.jpg",
+    imageUrl: "/assets/Product1.jpg",
   },
   {
     key: "shower-cabins",
     title: "Shower Cabins",
     desc: "Robust shower cabin systems — single or multi-stall — with quick plumbing hookup.",
-    imageUrl: "/src/assets/Product2.jpg",
+    imageUrl: "/assets/Product2.jpg",
   },
   {
     key: "executive-porta-cabins",
     title: "Executive Porta Cabins",
     desc: "Premium insulated porta cabins, ideal for on-site offices and VIP facilities.",
-    imageUrl: "/src/assets/Product3.jpg",
+    imageUrl: "/assets/Product3.jpg",
   },
   {
     key: "construction-site-cabins",
     title: "Construction Site Cabins",
     desc: "Rugged site cabins for supervisors, stores and welfare — built for heavy use.",
-    imageUrl: "/src/assets/Product4.jpg",
+    imageUrl: "/assets/Product4.jpg",
   },
   {
     key: "custom-fabricated",
     title: "Custom Fabricated Cabins",
     desc: "Tailor-made prefab cabins and modular solutions built to your requirements.",
-    imageUrl: "/src/assets/Product5.jpg",
+    imageUrl: "/assets/Product5.jpg",
   },
   {
     key: "maintenance-units",
     title: "Maintenance Units",
     desc: "On-site maintenance modules and storage units for service teams.",
-    imageUrl: "/src/assets/Product6.jpg",
+    imageUrl: "/assets/Product6.jpg",
   },
 ];
 

@@ -18,7 +18,7 @@ export default function Header() {
           {/* Logo */}
           <a href="#" className="flex items-center" aria-label="Home">
             <img
-              src="/src/assets/logo.png"
+              src="/assets/logo.png"
               alt="Al Afdal Porta Cabin"
               className="h-10 sm:h-12 md:h-14 w-auto object-contain"
             />
@@ -77,7 +77,7 @@ export default function Header() {
           {/* Drawer Header */}
           <div className="flex items-center justify-between px-5 py-4 border-b">
             <a href="#" onClick={() => setOpen(false)}>
-              <img src="/src/assets/logo.png" alt="Al Afdal Logo" className="h-10" />
+              <img src="/assets/logo.png" alt="Al Afdal Logo" className="h-10" />
             </a>
 
             <button

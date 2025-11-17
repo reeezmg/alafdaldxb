@@ -18,7 +18,7 @@ export default function Footer() {
   
         <div className="flex justify-center items-center">
           <img
-            src="/src/assets/logo.png"
+            src="/assets/logo.png"
             alt="Al Afdal Porta Cabin"
             className="h-16 w-auto object-contain"
           />

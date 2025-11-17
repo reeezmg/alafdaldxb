@@ -19,7 +19,7 @@ export default function About() {
         {/* IMAGE */}
         <div className="max-w-2xl mx-auto rounded-lg overflow-hidden shadow-md">
           <img
-            src="/src/assets/cabin2.jpg"
+            src="/assets/cabin2.jpg"
             alt="Prefab cabin"
             className="w-full h-full object-cover"
           />
