@@ -8,7 +8,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
           <div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
               Reliable Portable Sanitation & Porta Cabins
             </h1>
 
@@ -17,15 +17,16 @@ export default function Hero() {
             </p>
 
             {/*  glow on hover */}
-            <div className="mt-6 flex flex-col sm:flex-row gap-4 items-start">
+            <div className="mt-6 flex flex-row sm:flex-row gap-4 items-center justify-center sm:justify-start sm:items-start">
 
               {/* Primary Button */}
               <a
                 href="#contact"
                 className="
-      px-6 py-3 rounded-full font-semibold shadow 
+      px-4 py-2 sm:px-6 sm:py-3 rounded-full font-semibold shadow 
       inline-block whitespace-nowrap 
       transition-all duration-300 
+      text-sm sm:text-base
       hover:shadow-[0_0_12px_rgba(249,115,22,0.55)]
     "
                 style={{ background: 'var(--primary)', color: 'var(--white)' }}
@@ -37,9 +38,10 @@ export default function Hero() {
               <a
                 href="#products"
                 className="
-      px-6 py-3 rounded-full border border-gray-300 text-gray-700 
+      px-4 py-2 sm:px-6 sm:py-3 rounded-full border border-gray-300 text-gray-700 
       inline-block whitespace-nowrap 
-      transition-all duration-300 
+      transition-all duration-300
+      text-sm sm:text-base 
       hover:shadow-[0_0_12px_rgba(0,0,0,0.20)]
     "
               >
@@ -49,7 +51,7 @@ export default function Hero() {
             </div>
 
 
-            <div className="mt-6 flex flex-wrap items-center gap-3 text-sm text-gray-600">
+            <div className="mt-6 sm:flex sm:flex-wrap hidden items-center gap-3 text-sm text-gray-600">
               <a href="tel:+971586919282" className="flex items-center gap-2 hover:underline">
                 <Phone size={16} />+971 58 691 9282
               </a>
