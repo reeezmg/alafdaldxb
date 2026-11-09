@@ -1,119 +1,58 @@
-import BrandLogo from './BrandLogo';
 import React, { useState, useEffect, useRef } from 'react';
+import { Menu, X } from 'lucide-react';
+import BrandLogo from './BrandLogo';
+
+const links = [
+  { label: 'About', href: '#about' },
+  { label: 'Products', href: '#products' },
+  { label: 'ZPods', href: '#zpods' },
+  { label: 'Gallery', href: '#gallery' },
+];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const btnRef = useRef(null);
+  const headerRef = useRef(null);
+  const buttonRef = useRef(null);
 
   useEffect(() => {
-    if (open) document.body.style.overflow = 'hidden';
-    else document.body.style.overflow = '';
-    return () => { document.body.style.overflow = ''; };
+    if (!open) return;
+    const onKey = event => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+        buttonRef.current?.focus();
+      }
+    };
+    const onOutsideClick = event => {
+      if (!headerRef.current?.contains(event.target)) setOpen(false);
+    };
+    const desktop = window.matchMedia('(min-width: 768px)');
+    const onResize = event => { if (event.matches) setOpen(false); };
+    document.addEventListener('keydown', onKey);
+    document.addEventListener('pointerdown', onOutsideClick);
+    desktop.addEventListener('change', onResize);
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.removeEventListener('pointerdown', onOutsideClick);
+      desktop.removeEventListener('change', onResize);
+    };
   }, [open]);
 
   return (
-    <header className="bg-[var(--page)] backdrop-blur-md sticky top-0 z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-
-          {/* Logo */}
-          <a href="#" className="flex items-center" aria-label="Home">
-            <BrandLogo />
-          </a>
-
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center space-x-6">
-            <a href="#about" className="text-sm font-medium text-gray-700 hover:text-gray-900">About</a>
-            <a href="#products" className="text-sm font-medium text-gray-700 hover:text-gray-900">Products</a>
-            <a href="#zpods" className="text-sm font-medium text-gray-700 hover:text-gray-900">ZPods</a>
-
-            <a
-              href="#contact"
-              className="ml-2 inline-flex items-center px-4 py-2 rounded-full text-sm font-medium shadow"
-              style={{ background: 'var(--primary)', color: 'var(--white)' }}
-            >
-              Get a Quote
-            </a>
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button
-              ref={btnRef}
-              onClick={() => setOpen(v => !v)}
-              aria-expanded={open}
-              aria-controls="mobile-menu"
-              aria-label={open ? 'Close menu' : 'Open menu'}
-              className="p-2 rounded-full inline-flex items-center justify-center text-gray-700 hover:bg-gray-100"
-            >
-              {open ? (
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <path d="M6 18L18 6M6 6l12 12"
-                    stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              ) : (
-                <svg width="22" height="22" viewBox="0 0 24 24">
-                  <path d="M3 6h18M3 12h18M3 18h18"
-                    stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
-              )}
-            </button>
-          </div>
-
-        </div>
+    <header ref={headerRef} className="site-header sticky top-0 z-50 bg-[var(--page)] border-b border-[var(--border)]">
+      <div className="page-container flex items-center justify-between h-20 gap-4">
+        <a href="#home" aria-label="Al Afdal home" onClick={() => setOpen(false)}><BrandLogo /></a>
+        <nav aria-label="Main navigation" className="hidden md:flex items-center gap-6">
+          {links.map(link => <a key={link.href} href={link.href} className="nav-link text-sm font-medium text-gray-700">{link.label}</a>)}
+          <a href="#contact" className="quote-link">Get a Quote</a>
+        </nav>
+        <button ref={buttonRef} type="button" onClick={() => setOpen(value => !value)} aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? 'Close menu' : 'Open menu'} className="md:hidden p-3 rounded-full text-gray-800 border border-[var(--border)]">
+          {open ? <X size={22} aria-hidden="true" /> : <Menu size={22} aria-hidden="true" />}
+        </button>
       </div>
-
-      {/* Mobile Drawer */}
-      <div
-        id="mobile-menu"
-        className={`md:hidden fixed inset-0 z-50 ${open ? 'block' : 'hidden'}`}
-      >
-        <div className="absolute inset-0 bg-black/40" onClick={() => setOpen(false)} />
-
-        <aside className="relative z-10 w-full h-full bg-[var(--page)] overflow-auto">
-
-          {/* Drawer Header */}
-          <div className="flex items-center justify-between px-5 py-4 border-b">
-            <a href="#" onClick={() => setOpen(false)}>
-              <BrandLogo />
-            </a>
-
-            <button
-              onClick={() => setOpen(false)}
-              aria-label="Close menu"
-              className="p-2 rounded-full text-gray-700 hover:bg-gray-100"
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24">
-                <path d="M6 18L18 6M6 6l12 12"
-                  stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-              </svg>
-            </button>
-          </div>
-
-          {/* Drawer Links */}
-          <nav className="px-6 py-6 flex flex-col gap-4">
-            <a href="#about" onClick={() => setOpen(false)}
-               className="py-3 px-3 rounded-lg text-gray-800 hover:bg-gray-50">
-              About
-            </a>
-
-            <a href="#products" onClick={() => setOpen(false)}
-               className="py-3 px-3 rounded-lg text-gray-800 hover:bg-gray-50">
-              Products
-            </a>
-
-            <a
-              href="#contact"
-              onClick={() => setOpen(false)}
-              className="mt-4 inline-flex items-center justify-center px-4 py-3 rounded-full font-semibold"
-              style={{ background: 'var(--primary)', color: 'var(--white)' }}
-            >
-              Get a Quote
-            </a>
-          </nav>
-
-        </aside>
-      </div>
+      {open && <nav id="mobile-menu" aria-label="Mobile navigation" className="mobile-navigation md:hidden">
+        {links.map(link => <a key={link.href} href={link.href} onClick={() => setOpen(false)} className="mobile-nav-link">{link.label}</a>)}
+        <a href="#contact" onClick={() => setOpen(false)} className="quote-link mt-3 justify-center">Get a Quote</a>
+      </nav>}
     </header>
   );
 }

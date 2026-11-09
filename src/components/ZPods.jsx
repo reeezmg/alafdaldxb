@@ -6,7 +6,7 @@ export default function ZPods() {
     <section id="zpods" className="zpods-section max-w-7xl mx-auto mt-12 overflow-hidden rounded-2xl">
       <div className="grid lg:grid-cols-2">
         <div className="p-7 sm:p-10 lg:p-12 flex flex-col justify-center">
-          <p className="section-eyebrow text-red-400">ZPODS BY AL AFDAL</p>
+          <div className="zpods-brand"><img src="/assets/zpods-wordmark.png" alt="ZPods" width="587" height="101" /><span className="section-eyebrow text-gray-400">BY AL AFDAL</span></div>
           <h3 className="mt-4 text-3xl sm:text-4xl font-semibold tracking-tight">Space to focus.<br />Room to connect.</h3>
           <p className="mt-5 text-gray-300 leading-relaxed">A dedicated acoustic workspace for private calls, focused work and commercial meetings. Shape your pod around the way your business works.</p>
           <ul className="mt-6 space-y-3 text-sm text-gray-200">
