@@ -5,7 +5,7 @@ import WhatsAppIcon from './WhatsAppIcon';
 export default function Hero() {
   return (
     <section id="home" className="hero-section">
-      <div className="page-container pt-12 pb-8 sm:pt-16 lg:pt-20">
+      <div className="page-container pt-8 pb-8">
         <div className="hero-layout">
           <div className="hero-copy">
             <p className="section-eyebrow hero-eyebrow">BUILT AROUND YOUR PROJECT</p>
