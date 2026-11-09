@@ -1,0 +1,25 @@
+import React from 'react';
+import { ArrowUpRight, Check } from 'lucide-react';
+
+export default function ZPods() {
+  return (
+    <section id="zpods" className="zpods-section max-w-7xl mx-auto mt-12 overflow-hidden rounded-2xl">
+      <div className="grid lg:grid-cols-2">
+        <div className="p-7 sm:p-10 lg:p-12 flex flex-col justify-center">
+          <p className="section-eyebrow text-red-400">ZPODS BY AL AFDAL</p>
+          <h3 className="mt-4 text-3xl sm:text-4xl font-semibold tracking-tight">Space to focus.<br />Room to connect.</h3>
+          <p className="mt-5 text-gray-300 leading-relaxed">A dedicated acoustic workspace for private calls, focused work and commercial meetings. Shape your pod around the way your business works.</p>
+          <ul className="mt-6 space-y-3 text-sm text-gray-200">
+            {['Zoom meetings and private conversations', 'Team discussions and focused collaboration', 'Custom layouts, finishes and acoustic treatments'].map(item => <li key={item} className="flex gap-3 items-center"><Check size={17} className="text-red-400 shrink-0" />{item}</li>)}
+          </ul>
+          <p className="mt-5 text-xs leading-relaxed text-gray-400">Lighting, furniture, ventilation and power can be coordinated to your brief. Acoustic performance and included features depend on the selected specification.</p>
+          <a href="#contact" className="mt-7 inline-flex gap-2 items-center self-start rounded-full bg-[var(--primary)] px-6 py-3 text-sm font-semibold">Enquire about ZPods <ArrowUpRight size={17} /></a>
+        </div>
+        <div className="grid grid-cols-2 min-h-[280px] lg:min-h-[470px] gap-1">
+          <img src="/assets/zpod-focus.png" alt="Individual acoustic ZPod in a bright workplace" className="h-full w-full object-cover" loading="lazy" />
+          <img src="/assets/zpod-meeting.png" alt="Commercial meeting pod for team conversations" className="h-full w-full object-cover" loading="lazy" />
+        </div>
+      </div>
+    </section>
+  );
+}

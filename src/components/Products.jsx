@@ -1,4 +1,5 @@
 import React from "react";
+import ZPods from "./ZPods";
 
 const PRODUCT_DATA = [
   {
@@ -12,12 +13,6 @@ const PRODUCT_DATA = [
     title: "Shower Cabins",
     desc: "Robust shower cabin systems — single or multi-stall — with quick plumbing hookup.",
     imageUrl: "/assets/Product2.jpg",
-  },
-  {
-    key: "executive-porta-cabins",
-    title: "Executive Porta Cabins",
-    desc: "Premium insulated porta cabins, ideal for on-site offices and VIP facilities.",
-    imageUrl: "/assets/Product3.jpg",
   },
   {
     key: "construction-site-cabins",
@@ -37,6 +32,12 @@ const PRODUCT_DATA = [
     desc: "On-site maintenance modules and storage units for service teams.",
     imageUrl: "/assets/Product6.jpg",
   },
+  {
+    key: "executive-porta-cabins",
+    title: "Executive Porta Cabins",
+    desc: "Premium insulated porta cabins, ideal for on-site offices and VIP facilities.",
+    imageUrl: "/assets/Product3.jpg",
+  },
 ];
 
 export default function Products() {
@@ -44,18 +45,20 @@ export default function Products() {
     <section id="products" className="py-12 bg-white">
       <div className="px-6">
 
-        {/* Orange header */}
+        {/* Brand header */}
         <div className="text-center mb-8 bg-[var(--primary)] text-white py-8 px-6 rounded-lg ">
           <h2 className="text-2xl font-bold">Our Products</h2>
           <p className="mt-2">High-quality, durable & easy to maintain units.</p>
         </div>
 
+        <ZPods />
+
         {/* Product Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
           {PRODUCT_DATA.map((p) => (
             <article
               key={p.key}
-              className="p-8 rounded-lg text-left border border-orange-100 bg-orange-50/30 shadow-sm"
+              className="product-card p-6 rounded-xl text-left border border-[var(--border)] bg-[var(--surface)] shadow-sm"
             >
               {/* FIXED: Uniform image container with no cropping */}
               <div className="w-full h-48 mb-4 rounded bg-white flex items-center justify-center p-3 border border-gray-200">

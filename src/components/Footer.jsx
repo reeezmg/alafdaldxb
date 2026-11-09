@@ -10,17 +10,17 @@ export default function Footer() {
         className="
           max-w-7xl mx-auto px-6 py-10
           grid grid-cols-1 md:grid-cols-3 gap-10
-          rounded-lg border border-orange-100 
-          bg-orange-50/30 shadow-sm
+          rounded-lg border border-[var(--border)]
+          bg-[var(--surface)] shadow-sm
           text-center md:text-left
         "
       >
-  
+
         <div className="flex justify-center items-center">
           <img
-            src="/assets/logo.png"
-            alt="Al Afdal Porta Cabin"
-            className="h-16 w-auto object-contain"
+            src="/assets/al-afdal-logo.png"
+            alt="Al Afdal Industrial Plant Equipment & Spare Trading LLC, Dubai UAE"
+            className="w-60 h-auto object-contain"
           />
         </div>
 
@@ -53,8 +53,8 @@ export default function Footer() {
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="
-              flex items-center gap-1 px-3 py-1.5 
-              rounded-full font-medium text-sm shadow 
+              flex items-center gap-1 px-3 py-1.5
+              rounded-full font-medium text-sm shadow
               hover:shadow-md transition-all duration-200
             "
             style={{ background: "var(--primary)", color: "white" }}
@@ -68,7 +68,7 @@ export default function Footer() {
 
       {/* COPYRIGHT */}
       <div className="bg-white border-t py-4 text-center text-sm text-gray-600 mt-6">
-        © {new Date().getFullYear()} Al Afdal Porta Cabin. All rights reserved.
+        © {new Date().getFullYear()} Al Afdal. All rights reserved.
       </div>
 
     </footer>

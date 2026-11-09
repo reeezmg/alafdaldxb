@@ -1,22 +1,30 @@
 import React from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
+
+import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Hero() {
   return (
-    <section className="bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section className="hero-section">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
 
           <div>
+            <p className="section-eyebrow text-[var(--primary)] mb-4">BUILT AROUND YOUR PROJECT</p>
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
-              Reliable Portable Sanitation & Porta Cabins
+              Bespoke &amp; Modular Spaces
             </h1>
 
             <p className="mt-4 text-base sm:text-lg text-gray-600">
-              We supply premium porta cabins, portable toilets, showers, and site solutions.
+              Bespoke modular spaces, tailored to your project.
             </p>
 
-            {/*  glow on hover */}
+            <p className="mt-3 text-sm sm:text-base leading-relaxed text-gray-600 max-w-xl">
+              We design, manufacture, deliver and install spaces for work, living and welfare.
+              From executive offices and accommodation to acoustic ZPods, choose bespoke layouts and finishes with sale or rental options to suit your project.
+            </p>
+
+            {/* Quote and product links */}
             <div className="mt-6 flex flex-row sm:flex-row gap-4 items-center justify-center sm:justify-start sm:items-start">
 
               {/* Primary Button */}
@@ -27,7 +35,7 @@ export default function Hero() {
       inline-block whitespace-nowrap 
       transition-all duration-300 
       text-sm sm:text-base
-      hover:shadow-[0_0_12px_rgba(249,115,22,0.55)]
+      hover:shadow-[0_0_12px_rgba(210,41,30,0.25)]
     "
                 style={{ background: 'var(--primary)', color: 'var(--white)' }}
               >
@@ -51,13 +59,13 @@ export default function Hero() {
             </div>
 
 
-            <div className="mt-6 sm:flex sm:flex-wrap hidden items-center gap-3 text-sm text-gray-600">
-              <a href="tel:+971586919282" className="flex items-center gap-2 hover:underline">
-                <Phone size={16} />+971 58 691 9282
+            <div className="mt-7 flex flex-wrap items-center gap-3 text-sm text-gray-600">
+              <a href="https://wa.me/971586919282" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +971 58 691 9282" className="flex items-center gap-2 hover:underline">
+                <WhatsAppIcon size={16} />+971 58 691 9282
               </a>
 
-              <a href="tel:+971564791282" className="flex items-center gap-2 hover:underline">
-                <Phone size={16} />+971 56 479 1282
+              <a href="https://wa.me/971564791282" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +971 56 479 1282" className="flex items-center gap-2 hover:underline">
+                <WhatsAppIcon size={16} />+971 56 479 1282
               </a>
 
               <a href="mailto:sales@alafdaldxb.com" className="flex items-center gap-2 hover:underline">
@@ -75,7 +83,7 @@ export default function Hero() {
             <div className="w-full  rounded-lg overflow-hidden">
               <img
                 src="/assets/cabin1.png"
-                alt="Hero"
+                alt="Bespoke modular office with glazed frontage and meeting space"
                 className="w-full h-full object-contain"
               />
             </div>

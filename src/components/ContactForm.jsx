@@ -1,5 +1,7 @@
 import React from 'react'
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
+
+import WhatsAppIcon from './WhatsAppIcon';
 
 export default function ContactForm() {
   return (
@@ -16,17 +18,17 @@ export default function ContactForm() {
           <div>
             <h3 className="text-3xl font-bold">Get in touch</h3>
             <p className="mt-2 opacity-90">
-              Contact us for inquiries or quotations.
+              Contact us for inquiries or quotations, or chat with us on WhatsApp.
             </p>
 
             <div className="mt-6 space-y-4 text-sm">
 
-              <a href="tel:0586919282" className="flex items-center gap-3 hover:underline">
-                <Phone size={18} /> +971 58 691 9282
+              <a href="https://wa.me/971586919282" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +971 58 691 9282" className="flex items-center gap-3 hover:underline">
+                <WhatsAppIcon size={18} /> +971 58 691 9282
               </a>
 
-              <a href="tel:0564791282" className="flex items-center gap-3 hover:underline">
-                <Phone size={18} /> +971 56 479 1282
+              <a href="https://wa.me/971564791282" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +971 56 479 1282" className="flex items-center gap-3 hover:underline">
+                <WhatsAppIcon size={18} /> +971 56 479 1282
               </a>
 
               <a href="mailto:sales@alafdaldxb.com" className="flex items-center gap-3 hover:underline">

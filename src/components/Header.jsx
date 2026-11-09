@@ -1,3 +1,4 @@
+import BrandLogo from './BrandLogo';
 import React, { useState, useEffect, useRef } from 'react';
 
 export default function Header() {
@@ -11,17 +12,13 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className="bg-white sticky top-0 z-50 shadow-sm">
+    <header className="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
 
           {/* Logo */}
           <a href="#" className="flex items-center" aria-label="Home">
-            <img
-              src="/assets/logo.png"
-              alt="Al Afdal Porta Cabin"
-              className="h-10 sm:h-12 md:h-14 w-auto object-contain"
-            />
+            <BrandLogo />
           </a>
 
           {/* Desktop Nav */}
@@ -77,11 +74,12 @@ export default function Header() {
           {/* Drawer Header */}
           <div className="flex items-center justify-between px-5 py-4 border-b">
             <a href="#" onClick={() => setOpen(false)}>
-              <img src="/assets/logo.png" alt="Al Afdal Logo" className="h-10" />
+              <BrandLogo />
             </a>
 
             <button
               onClick={() => setOpen(false)}
+              aria-label="Close menu"
               className="p-2 rounded-full text-gray-700 hover:bg-gray-100"
             >
               <svg width="20" height="20" viewBox="0 0 24 24">

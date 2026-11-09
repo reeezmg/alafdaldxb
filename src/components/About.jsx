@@ -25,13 +25,13 @@ export default function About() {
           />
         </div>
 
-        {/* VISION & MISSION – subtle orange style */}
+        {/* VISION & MISSION – brand accents */}
         <div className="grid gap-10 md:grid-cols-2 max-w-7xl mx-auto">
           {/* Vision */}
-          <div className="p-8 rounded-lg text-center border border-orange-100 bg-orange-50/30 shadow-sm">
+          <div className="p-8 rounded-lg text-center border border-[var(--border)] bg-[var(--surface)] shadow-sm">
             <h3 className="text-2xl font-bold mb-3 relative inline-block">
               Our Vision
-              <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-orange-400 rounded-full"></span>
+              <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[var(--primary)] rounded-full"></span>
             </h3>
 
             <p className="text-gray-700 leading-relaxed mt-4">
@@ -41,10 +41,10 @@ export default function About() {
           </div>
 
           {/* Mission */}
-          <div className="p-8 rounded-lg text-center border border-orange-100 bg-orange-50/30 shadow-sm">
+          <div className="p-8 rounded-lg text-center border border-[var(--border)] bg-[var(--surface)] shadow-sm">
             <h3 className="text-2xl font-bold mb-3 relative inline-block">
               Our Mission
-              <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-orange-400 rounded-full"></span>
+              <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[var(--primary)] rounded-full"></span>
             </h3>
 
             <p className="text-gray-700 leading-relaxed mt-4">
@@ -68,13 +68,13 @@ export default function About() {
           </ul>
         </div>
 
-        {/* MILESTONES & PROMISE – same orange style as Vision & Mission */}
+        {/* MILESTONES & PROMISE – brand accents */}
         <div className="grid gap-10 md:grid-cols-2  max-w-7xl mx-auto">
           {/* Milestones */}
-          <div className="p-8 rounded-lg border border-orange-100 bg-orange-50/30 shadow-sm">
+          <div className="p-8 rounded-lg border border-[var(--border)] bg-[var(--surface)] shadow-sm">
             <h3 className="text-2xl font-bold mb-3 relative inline-block">
               Milestones & Achievements
-              <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-orange-400 rounded-full"></span>
+              <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[var(--primary)] rounded-full"></span>
             </h3>
 
             <ul className="mt-4 text-gray-700 leading-relaxed space-y-2">
@@ -86,10 +86,10 @@ export default function About() {
           </div>
 
           {/* Promise */}
-          <div className="p-8 rounded-lg border border-orange-100 bg-orange-50/30 shadow-sm">
+          <div className="p-8 rounded-lg border border-[var(--border)] bg-[var(--surface)] shadow-sm">
             <h3 className="text-2xl font-bold mb-3 relative inline-block">
               Our Promise
-              <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-orange-400 rounded-full"></span>
+              <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[var(--primary)] rounded-full"></span>
             </h3>
 
             <p className="text-gray-700 leading-relaxed mt-4">
