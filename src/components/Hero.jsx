@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Mail, MapPin } from 'lucide-react';
 
 import WhatsAppIcon from './WhatsAppIcon';
@@ -16,7 +16,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-4 text-base sm:text-lg text-gray-600">
-              Offices. Accommodation. Acoustic ZPods. Spaces made for you.
+              Sanitation, ablution, offices, accommodation and acoustic ZPods, tailored to your project.
             </p>
 
             <p className="mt-3 text-sm sm:text-base leading-relaxed text-gray-600 max-w-xl">
@@ -101,3 +101,4 @@ export default function Hero() {
     </section>
   );
 }
+

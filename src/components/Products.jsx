@@ -42,7 +42,7 @@ const PRODUCT_DATA = [
 
 export default function Products() {
   return (
-    <section id="products" className="py-12 bg-white">
+    <section id="products" className="py-12 bg-[var(--page)]">
       <div className="page-container">
 
         <div className="section-heading">
@@ -57,10 +57,10 @@ export default function Products() {
           {PRODUCT_DATA.map((p) => (
             <article
               key={p.key}
-              className="product-card p-6 rounded-xl text-left border border-[var(--border)] bg-white shadow-sm"
+              className="product-card p-6 rounded-xl text-left border border-[var(--border)] bg-[var(--page)] shadow-sm"
             >
               {/* FIXED: Uniform image container with no cropping */}
-              <div className="w-full h-48 mb-4 rounded bg-white flex items-center justify-center p-3 border border-gray-200">
+              <div className="w-full h-48 mb-4 rounded bg-[var(--page)] flex items-center justify-center p-3 border border-gray-200">
                 <img
                   src={p.imageUrl}
                   alt={p.title}

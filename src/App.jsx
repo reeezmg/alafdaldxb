@@ -9,7 +9,7 @@ import SpacesGallery from './components/SpacesGallery'
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-800">
+    <div className="min-h-screen bg-[var(--page)] text-gray-800">
       <Header />
       <main>
         <Hero />

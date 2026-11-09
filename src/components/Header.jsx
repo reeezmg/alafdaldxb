@@ -12,7 +12,7 @@ export default function Header() {
   }, [open]);
 
   return (
-    <header className="bg-white/95 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+    <header className="bg-[var(--page)] backdrop-blur-md sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
 
@@ -70,7 +70,7 @@ export default function Header() {
       >
         <div className="absolute inset-0 bg-black/40" onClick={() => setOpen(false)} />
 
-        <aside className="relative z-10 w-full h-full bg-white overflow-auto">
+        <aside className="relative z-10 w-full h-full bg-[var(--page)] overflow-auto">
 
           {/* Drawer Header */}
           <div className="flex items-center justify-between px-5 py-4 border-b">

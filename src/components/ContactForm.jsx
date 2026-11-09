@@ -44,7 +44,7 @@ export default function ContactForm() {
           </div>
 
           {/* RIGHT SIDE — Form */}
-          <form className="bg-white p-6 sm:p-8 rounded-2xl shadow-md text-gray-800">
+          <form className="bg-[var(--page)] p-6 sm:p-8 rounded-2xl shadow-md text-gray-800">
             
             <label className="block text-sm font-medium">Full name</label>
             <input

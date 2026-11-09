@@ -67,7 +67,7 @@ export default function Footer() {
       </div>
 
       {/* COPYRIGHT */}
-      <div className="bg-white border-t py-4 text-center text-sm text-gray-600 mt-6">
+      <div className="bg-[var(--page)] border-t py-4 text-center text-sm text-gray-600 mt-6">
         © {new Date().getFullYear()} Al Afdal. All rights reserved.
       </div>
 

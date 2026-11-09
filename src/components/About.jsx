@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="about" className="bg-white py-16">
+    <section id="about" className="bg-[var(--page)] py-16">
       <div className="page-container space-y-10 text-center">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-14 items-center text-left">
           <div className="relative">
