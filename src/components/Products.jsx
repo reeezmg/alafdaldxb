@@ -43,12 +43,11 @@ const PRODUCT_DATA = [
 export default function Products() {
   return (
     <section id="products" className="py-12 bg-white">
-      <div className="px-6">
+      <div className="page-container">
 
-        {/* Brand header */}
-        <div className="text-center mb-8 bg-[var(--primary)] text-white py-8 px-6 rounded-lg ">
-          <h2 className="text-2xl font-bold">Our Products</h2>
-          <p className="mt-2">High-quality, durable & easy to maintain units.</p>
+        <div className="section-heading">
+          <div><p className="section-eyebrow text-[var(--primary)]">OUR PRODUCTS</p><h2 className="mt-3 text-3xl sm:text-4xl font-semibold tracking-tight">The right space.<br />For every requirement.</h2></div>
+          <p className="text-sm text-gray-600 leading-relaxed max-w-md">From acoustic workspaces to practical site facilities, explore high-quality, durable units tailored to the way you work.</p>
         </div>
 
         <ZPods />
@@ -58,7 +57,7 @@ export default function Products() {
           {PRODUCT_DATA.map((p) => (
             <article
               key={p.key}
-              className="product-card p-6 rounded-xl text-left border border-[var(--border)] bg-[var(--surface)] shadow-sm"
+              className="product-card p-6 rounded-xl text-left border border-[var(--border)] bg-white shadow-sm"
             >
               {/* FIXED: Uniform image container with no cropping */}
               <div className="w-full h-48 mb-4 rounded bg-white flex items-center justify-center p-3 border border-gray-200">
@@ -75,7 +74,7 @@ export default function Products() {
               <div className="mt-5">
                 <a
                   href="#contact"
-                  className="inline-block px-4 py-2 rounded-md text-sm font-semibold"
+                  className="inline-block px-4 py-2 rounded-full text-sm font-semibold"
                   style={{ background: "var(--primary)", color: "white" }}
                 >
                   Enquire

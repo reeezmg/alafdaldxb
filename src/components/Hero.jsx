@@ -7,16 +7,16 @@ export default function Hero() {
   return (
     <section className="hero-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
           <div>
             <p className="section-eyebrow text-[var(--primary)] mb-4">BUILT AROUND YOUR PROJECT</p>
-            <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
-              Bespoke &amp; Modular Spaces
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
+              Bespoke Modular Spaces, Interiors &amp; Site Solutions
             </h1>
 
             <p className="mt-4 text-base sm:text-lg text-gray-600">
-              Bespoke modular spaces, tailored to your project.
+              Offices. Accommodation. Acoustic ZPods. Spaces made for you.
             </p>
 
             <p className="mt-3 text-sm sm:text-base leading-relaxed text-gray-600 max-w-xl">
@@ -79,7 +79,7 @@ export default function Hero() {
           </div>
 
           {/* Image */}
-          <div>
+          <div className="hero-media">
             <div className="w-full  rounded-lg overflow-hidden">
               <img
                 src="/assets/cabin1.png"
@@ -87,8 +87,15 @@ export default function Hero() {
                 className="w-full h-full object-contain"
               />
             </div>
+            <div className="hero-detail">
+              <img src="/assets/office-interior.webp" alt="Finished modular office interior" className="w-20 h-20 rounded-lg object-cover" />
+              <div><p className="section-eyebrow text-[var(--primary)]">TAILORED TO YOUR BRIEF</p><p className="mt-2 text-sm text-gray-700">From the first layout<br />to the finishing touches.</p></div>
+            </div>
           </div>
 
+        </div>
+        <div className="delivery-strip">
+          {['Design', 'Manufacture', 'Deliver', 'Install'].map((step, i) => <div key={step} className="flex items-center gap-3"><span className="text-xs text-[var(--primary)] font-semibold">0{i + 1}</span><span className="text-sm font-medium">{step}</span></div>)}
         </div>
       </div>
     </section>

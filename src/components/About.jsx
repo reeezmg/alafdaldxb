@@ -3,33 +3,31 @@ import React from "react";
 export default function About() {
   return (
     <section id="about" className="bg-white py-16">
-      <div className=" px-4 sm:px-6 lg:px-8 space-y-16 text-center">
-        {/* ABOUT US */}
-      <div className="space-y-4 bg-[var(--primary)] text-white py-10 px-6 rounded-lg ">
-          <h2 className="text-3xl font-bold">About Us</h2>
-          <p className="leading-relaxed ">
-            With over a decade of excellence, AL AFDAL delivers high-quality
-            prefab and portable sanitation solutions across the UAE, KSA, and
-            India. We combine durable materials, fast delivery, and professional
-            installation to deliver modular offices, porta cabins, and
-            sanitation units trusted across industries.
-          </p>
-        </div>
-
-        {/* IMAGE */}
-        <div className="max-w-2xl mx-auto rounded-lg overflow-hidden shadow-md">
-          <img
-            src="/assets/cabin2.jpg"
-            alt="Prefab cabin"
-            className="w-full h-full object-cover"
-          />
+      <div className="page-container space-y-10 text-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-14 items-center text-left">
+          <div className="relative">
+            <img src="/assets/cabin2.jpg" alt="Al Afdal prefabricated cabin" className="w-full aspect-[4/3] object-cover rounded-2xl" loading="lazy" />
+            <div className="about-note"><span className="text-3xl font-semibold">10+</span><span className="text-xs leading-relaxed">Years of experience<br />across UAE, KSA &amp; India</span></div>
+          </div>
+          <div>
+            <p className="section-eyebrow text-[var(--primary)]">ABOUT AL AFDAL</p>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mt-3">Built around<br />your project.</h2>
+            <p className="leading-relaxed text-gray-600 mt-5">
+              With over a decade of excellence, AL AFDAL delivers high-quality
+              prefab and portable sanitation solutions across the UAE, KSA, and
+              India. We combine durable materials, fast delivery, and professional
+              installation to deliver modular offices, porta cabins, and
+              sanitation units trusted across industries.
+            </p>
+            <p className="mt-5 text-sm font-medium border-l-2 border-[var(--primary)] pl-4">One partner from the first layout to the finished space.</p>
+          </div>
         </div>
 
         {/* VISION & MISSION – brand accents */}
-        <div className="grid gap-10 md:grid-cols-2 max-w-7xl mx-auto">
+        <div className="grid gap-6 md:grid-cols-2 max-w-7xl mx-auto">
           {/* Vision */}
-          <div className="p-8 rounded-lg text-center border border-[var(--border)] bg-[var(--surface)] shadow-sm">
-            <h3 className="text-2xl font-bold mb-3 relative inline-block">
+          <div className="info-card p-8 text-left">
+            <h3 className="text-xl font-semibold mb-3 relative inline-block">
               Our Vision
               <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[var(--primary)] rounded-full"></span>
             </h3>
@@ -41,8 +39,8 @@ export default function About() {
           </div>
 
           {/* Mission */}
-          <div className="p-8 rounded-lg text-center border border-[var(--border)] bg-[var(--surface)] shadow-sm">
-            <h3 className="text-2xl font-bold mb-3 relative inline-block">
+          <div className="info-card p-8 text-left">
+            <h3 className="text-xl font-semibold mb-3 relative inline-block">
               Our Mission
               <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[var(--primary)] rounded-full"></span>
             </h3>
@@ -55,7 +53,7 @@ export default function About() {
         </div>
 
         {/* EXPERTISE */}
-        <div className="space-y-4 bg-[var(--primary)] text-white py-10 px-6 rounded-lg ">
+        <div className="expertise-panel space-y-5 text-white py-10 px-6 sm:px-10 rounded-2xl">
           <h3 className="text-2xl font-bold text-center">Our Expertise</h3>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-3xl mx-auto text-left">
@@ -69,10 +67,10 @@ export default function About() {
         </div>
 
         {/* MILESTONES & PROMISE – brand accents */}
-        <div className="grid gap-10 md:grid-cols-2  max-w-7xl mx-auto">
+        <div className="grid gap-6 md:grid-cols-2  max-w-7xl mx-auto">
           {/* Milestones */}
-          <div className="p-8 rounded-lg border border-[var(--border)] bg-[var(--surface)] shadow-sm">
-            <h3 className="text-2xl font-bold mb-3 relative inline-block">
+          <div className="info-card p-8 text-left">
+            <h3 className="text-xl font-semibold mb-3 relative inline-block">
               Milestones & Achievements
               <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[var(--primary)] rounded-full"></span>
             </h3>
@@ -86,8 +84,8 @@ export default function About() {
           </div>
 
           {/* Promise */}
-          <div className="p-8 rounded-lg border border-[var(--border)] bg-[var(--surface)] shadow-sm">
-            <h3 className="text-2xl font-bold mb-3 relative inline-block">
+          <div className="info-card p-8 text-left">
+            <h3 className="text-xl font-semibold mb-3 relative inline-block">
               Our Promise
               <span className="absolute left-0 -bottom-1 w-full h-[3px] bg-[var(--primary)] rounded-full"></span>
             </h3>

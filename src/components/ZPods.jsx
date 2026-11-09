@@ -15,9 +15,15 @@ export default function ZPods() {
           <p className="mt-5 text-xs leading-relaxed text-gray-400">Lighting, furniture, ventilation and power can be coordinated to your brief. Acoustic performance and included features depend on the selected specification.</p>
           <a href="#contact" className="mt-7 inline-flex gap-2 items-center self-start rounded-full bg-[var(--primary)] px-6 py-3 text-sm font-semibold">Enquire about ZPods <ArrowUpRight size={17} /></a>
         </div>
-        <div className="grid grid-cols-2 min-h-[280px] lg:min-h-[470px] gap-1">
-          <img src="/assets/zpod-focus.png" alt="Individual acoustic ZPod in a bright workplace" className="h-full w-full object-cover" loading="lazy" />
-          <img src="/assets/zpod-meeting.png" alt="Commercial meeting pod for team conversations" className="h-full w-full object-cover" loading="lazy" />
+        <div className="zpod-media p-5 sm:p-8 lg:pl-0 flex flex-col justify-center gap-4">
+          <figure className="overflow-hidden rounded-xl bg-white/5">
+            <img src="/assets/zpod-meeting.png" alt="Commercial meeting pod for team conversations" className="w-full aspect-[3/2] object-cover" loading="lazy" />
+            <figcaption className="px-5 py-4 text-sm text-gray-300">A room for the conversation, within your workplace.</figcaption>
+          </figure>
+          <div className="flex items-center gap-5 rounded-xl border border-white/10 p-3">
+            <img src="/assets/zpod-focus.png" alt="Individual acoustic ZPod in a bright workplace" className="w-24 h-28 rounded-lg object-cover object-bottom" loading="lazy" />
+            <div><p className="text-sm font-medium">Your own quiet corner.</p><p className="mt-2 text-xs leading-relaxed text-gray-400">Private calls, focused work<br />and a more considered working day.</p></div>
+          </div>
         </div>
       </div>
     </section>

@@ -25,6 +25,7 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#about" className="text-sm font-medium text-gray-700 hover:text-gray-900">About</a>
             <a href="#products" className="text-sm font-medium text-gray-700 hover:text-gray-900">Products</a>
+            <a href="#zpods" className="text-sm font-medium text-gray-700 hover:text-gray-900">ZPods</a>
 
             <a
               href="#contact"

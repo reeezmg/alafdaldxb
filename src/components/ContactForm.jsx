@@ -7,7 +7,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="py-16"
+      className="contact-section py-16 sm:py-20"
       style={{ background: "var(--primary)" }}
     >
       <div className="max-w-5xl mx-auto px-6 text-white">
@@ -16,7 +16,8 @@ export default function ContactForm() {
 
           {/* LEFT SIDE — Contact Info */}
           <div>
-            <h3 className="text-3xl font-bold">Get in touch</h3>
+            <p className="section-eyebrow text-white/80 mb-4">LET?S SHAPE YOUR NEXT SPACE</p>
+            <h3 className="text-3xl sm:text-4xl font-semibold tracking-tight">Get in touch</h3>
             <p className="mt-2 opacity-90">
               Contact us for inquiries or quotations, or chat with us on WhatsApp.
             </p>
@@ -43,7 +44,7 @@ export default function ContactForm() {
           </div>
 
           {/* RIGHT SIDE — Form */}
-          <form className="bg-white p-6 rounded-lg shadow-md text-gray-800">
+          <form className="bg-white p-6 sm:p-8 rounded-2xl shadow-md text-gray-800">
             
             <label className="block text-sm font-medium">Full name</label>
             <input

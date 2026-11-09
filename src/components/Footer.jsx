@@ -10,7 +10,7 @@ export default function Footer() {
         className="
           max-w-7xl mx-auto px-6 py-10
           grid grid-cols-1 md:grid-cols-3 gap-10
-          rounded-lg border border-[var(--border)]
+          rounded-2xl border border-[var(--border)]
           bg-[var(--surface)] shadow-sm
           text-center md:text-left
         "

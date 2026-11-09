@@ -5,6 +5,7 @@ import About from './components/About'
 import Products from './components/Products'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
+import SpacesGallery from './components/SpacesGallery'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Hero />
         <About />
         <Products />
+        <SpacesGallery />
         <ContactForm />
       </main>
       <Footer />
