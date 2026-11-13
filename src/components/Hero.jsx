@@ -21,6 +21,10 @@ export default function Hero() {
               We design, manufacture, deliver and install spaces for work, living and welfare.
               Choose bespoke layouts and finishes, with sale or rental options to suit your project.
             </p>
+            <p className="mt-4 text-xs sm:text-sm leading-relaxed text-gray-500 max-w-xl">
+              Porta cabins, portable units and prefab modular units.<br />
+              Porta cabin site offices and labour accommodation, built around your needs.
+            </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a href="#contact" className="hero-cta">Request a Quote <ArrowUpRight size={18} aria-hidden="true" /></a>
               <a href="#products" className="hero-secondary">Explore Our Products</a>
